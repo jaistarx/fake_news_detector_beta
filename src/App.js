@@ -13,6 +13,8 @@ function App() {
   const [foriginal,setForiginal]=useState([]);
   const [load,setLoad]=useState(true)
 
+  // Axios.defaults.baseURL="https://fakend.herokuapp.com/time"
+
     const proxyurl="https://cors-anywhere.herokuapp.com/";
     const url="https://fakend.herokuapp.com/time";
     const handleApply = async () => {

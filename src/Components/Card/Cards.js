@@ -5,14 +5,11 @@ import { IconContext } from "react-icons/lib";
 import { FaQuestion, FaLinkedinIn } from "react-icons/fa";
 import Loading from "../Animation/Animation";
 export default function News(props) {
- 
   const [check, setCheck] = useState(0);
   const [original, setOriginal] = useState(4);
- 
+  
   const [checked1, setChecked1] = useState(true);
   const [checked2, setChecked2] = useState(false);
-
-
 
   var c = props.fo.length;
   var b = [];
@@ -24,6 +21,7 @@ export default function News(props) {
 
   // setLoad(true)
   s = props.foriginal;
+  
   // setLoad(false)
   // sortedArr = sortWithIndeces(sortedArr);
   // var p = sortedArr.sortIndices;
@@ -111,147 +109,139 @@ export default function News(props) {
       {
         // console.log(sortedArr),
         ((k = check === 1 ? sortedArr : s),
-        k.map(
-          (n, index) => (
-            (d = check === 0 ? b[index] : sortedArr.sortIndices[index]),
-            (
-              <div className="mainflexing" key={d}>
-                <div className="news" key={d}>
-                  <div className="flexing2">
-                    <div className="subnews">
-                      <a
-                        href={props.fu[d]}
-                        style={{ textDecoration: "none", color: "black" }}
-                        alt=""
-                      >
-                        <h1>{String(props.ft[d]).slice(0, 100)}...</h1>
-                      </a>
-                      <span>{String(props.fd[d]).slice(0, 10)}</span>
-                    </div>
-                    <div className="subnews-media-descrip">
-                      <p>{String(props.fdesc[d]).slice(0, 300)}</p>
-                    </div>
-                    <div className="mainflexing-media">
-                      <div className="subicons-media">
-                        <IconContext.Provider
-                          value={{ color: "green", size: "25%" }}
-                        >
-                          <a href={props.fu[d]}>
-                            <BsNewspaper className="ic" />
-                          </a>
-                        </IconContext.Provider>
-                        <div className="txts">
-                          <a
-                            href={props.fu[d]}
-                            style={{ textDecoration: "none", color: "black" }}
-                          >
-                            <p>Source</p>
-                          </a>
-                        </div>
-                      </div>
-                      <div className="subicons-media">
-                        <IconContext.Provider
-                          value={{ color: "green", size: "25%" }}
-                        >
-                          <FaQuestion className="ic" />
-                        </IconContext.Provider>
-                        <div className="txts">
-                          <p>{parseInt(100 * n)}%</p>
-                        </div>
-                      </div>
-                      <div className="subicons-media">
-                        <IconContext.Provider
-                          value={{ color: "green", size: "25%" }}
-                        >
-                          <a
-                            href={
-                              "https://www.linkedin.com/sharing/share-offsite/?url=" +
-                              props.fu[d]
-                            }
-                            style={{ textDecoration: "none", color: "black" }}
-                          >
-                            <FaLinkedinIn className="ic" />
-                          </a>
-                        </IconContext.Provider>
-                        <div className="txts">
-                          <a
-                            href={
-                              "https://www.linkedin.com/sharing/share-offsite/?url=" +
-                              props.fu[d]
-                            }
-                            style={{ textDecoration: "none", color: "black" }}
-                          >
-                            <p>Share</p>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
+        k.map((ni, index) =>{
+          d = check === 0 ? b[index] : sortedArr.sortIndices[index]
+          return(
+            <div className="mainflexing" key={d}>
+              <div className="news" key={d}>
+                <div className="flexing2">
+                  <div className="subnews">
+                    <a
+                      href={props.fu[d]}
+                      style={{ textDecoration: "none", color: "black" }}
+                      alt=""
+                    >
+                      <h1>{String(props.ft[d]).slice(0, 100)}...</h1>
+                    </a>
+                    <span>{String(props.fd[d]).slice(0, 10)}</span>
                   </div>
-
-                  <div className="flexing3">
-                    <script
-                      async
-                      src="https://static.addtoany.com/menu/page.js"
-                    ></script>
+                  <div className="subnews-media-descrip">
+                    <p>{String(props.fdesc[d]).slice(0, 300)}</p>
+                  </div>
+                  <div className="mainflexing-media">
+                    <div className="subicons-media">
+                      <IconContext.Provider
+                        value={{ color: "green", size: "25%" }}
+                      >
+                        <a href={props.fu[d]}>
+                          <BsNewspaper className="ic" />
+                        </a>
+                      </IconContext.Provider>
+                      <div className="txts">
+                        <a
+                          href={props.fu[d]}
+                          style={{ textDecoration: "none", color: "black" }}
+                        >
+                          <p>Source</p>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="subicons-media">
+                      <IconContext.Provider
+                        value={{ color: "green", size: "25%" }}
+                      >
+                        <FaQuestion className="ic" />
+                      </IconContext.Provider>
+                      <div className="txts">
+                        <p>{parseInt(100 * ni)}%</p>
+                      </div>
+                    </div>
+                    <div className="subicons-media">
+                      <IconContext.Provider
+                        value={{ color: "green", size: "25%" }}
+                      >
+                        <a
+                          href={
+                            "https://www.linkedin.com/sharing/share-offsite/?url=" +
+                            props.fu[d]
+                          }
+                          style={{ textDecoration: "none", color: "black" }}
+                        >
+                          <FaLinkedinIn className="ic" />
+                        </a>
+                      </IconContext.Provider>
+                      <div className="txts">
+                        <a
+                          href={
+                            "https://www.linkedin.com/sharing/share-offsite/?url=" +
+                            props.fu[d]
+                          }
+                          style={{ textDecoration: "none", color: "black" }}
+                        >
+                          <p>Share</p>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div className="mainicons">
-                  <div className="subicons">
-                    <IconContext.Provider
-                      value={{ color: "green", size: "85%" }}
+
+                <div className="flexing3">
+                  <script
+                    async
+                    src="https://static.addtoany.com/menu/page.js"
+                  ></script>
+                </div>
+              </div>
+              <div className="mainicons">
+                <div className="subicons">
+                  <IconContext.Provider value={{ color: "green", size: "85%" }}>
+                    <a href={props.fu[d]}>
+                      <BsNewspaper className="ic" />
+                    </a>
+                  </IconContext.Provider>
+                  <div className="txts">
+                    <a
+                      href={props.fu[d]}
+                      style={{ textDecoration: "none", color: "black" }}
                     >
-                      <a href={props.fu[d]}>
-                        <BsNewspaper className="ic" />
-                      </a>
-                    </IconContext.Provider>
-                    <div className="txts">
-                      <a
-                        href={props.fu[d]}
-                        style={{ textDecoration: "none", color: "black" }}
-                      >
-                        Source
-                      </a>
-                    </div>
+                      Source
+                    </a>
                   </div>
-                  <div className="subicons">
-                    <IconContext.Provider
-                      value={{ color: "green", size: "30%" }}
+                </div>
+                <div className="subicons">
+                  <IconContext.Provider value={{ color: "green", size: "30%" }}>
+                    <FaQuestion className="ic" />
+                  </IconContext.Provider>
+                  <div className="txts">{parseInt(100 * ni)}%</div>
+                </div>
+                <div className="subicons">
+                  <IconContext.Provider value={{ color: "green", size: "75%" }}>
+                    <a
+                      href={
+                        "https://www.linkedin.com/sharing/share-offsite/?url=" +
+                        props.fu[d]
+                      }
+                      style={{ textDecoration: "none", color: "black" }}
                     >
-                      <FaQuestion className="ic" />
-                    </IconContext.Provider>
-                    <div className="txts">{parseInt(100 * n)}%</div>
-                  </div>
-                  <div className="subicons">
-                    <IconContext.Provider
-                      value={{ color: "green", size: "75%" }}
+                      <FaLinkedinIn className="ic" />
+                    </a>
+                  </IconContext.Provider>
+                  <div className="txts">
+                    <a
+                      href={
+                        "https://www.linkedin.com/sharing/share-offsite/?url=" +
+                        props.fu[d]
+                      }
+                      style={{ textDecoration: "none", color: "black" }}
                     >
-                      <a
-                        href={
-                          "https://www.linkedin.com/sharing/share-offsite/?url=" +
-                          props.fu[d]
-                        }
-                        style={{ textDecoration: "none", color: "black" }}
-                      >
-                        <FaLinkedinIn className="ic" />
-                      </a>
-                    </IconContext.Provider>
-                    <div className="txts">
-                      <a
-                        href={
-                          "https://www.linkedin.com/sharing/share-offsite/?url=" +
-                          props.fu[d]
-                        }
-                        style={{ textDecoration: "none", color: "black" }}
-                      >
-                        Share
-                      </a>
-                    </div>
+                      Share
+                    </a>
                   </div>
                 </div>
               </div>
-            )
+            </div>
           )
-        ))
+        }))
       }
     </div>
   );
