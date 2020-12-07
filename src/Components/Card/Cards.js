@@ -7,7 +7,7 @@ import Loading from "../Animation/Animation";
 export default function News(props) {
   const [check, setCheck] = useState(0);
   const [original, setOriginal] = useState(4);
-  
+
   const [checked1, setChecked1] = useState(true);
   const [checked2, setChecked2] = useState(false);
 
@@ -21,7 +21,7 @@ export default function News(props) {
 
   // setLoad(true)
   s = props.foriginal;
-  
+
   // setLoad(false)
   // sortedArr = sortWithIndeces(sortedArr);
   // var p = sortedArr.sortIndices;
@@ -76,7 +76,7 @@ export default function News(props) {
   var k = [];
   return (
     <div>
-      <div className="flexing fx" style={{ padding: "2.5rem" }}>
+      <div className="flexing fx">
         {/* <input placeholder="Search" className="sb"></input> */}
         <p>
           Relevant By Date
@@ -109,9 +109,9 @@ export default function News(props) {
       {
         // console.log(sortedArr),
         ((k = check === 1 ? sortedArr : s),
-        k.map((ni, index) =>{
-          d = check === 0 ? b[index] : sortedArr.sortIndices[index]
-          return(
+        k.map((ni, index) => {
+          d = check === 0 ? b[index] : sortedArr.sortIndices[index];
+          return (
             <div className="mainflexing" key={d}>
               <div className="news" key={d}>
                 <div className="flexing2">
@@ -240,7 +240,7 @@ export default function News(props) {
                 </div>
               </div>
             </div>
-          )
+          );
         }))
       }
     </div>

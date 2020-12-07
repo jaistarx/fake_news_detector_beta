@@ -73,7 +73,8 @@
   display: none;
 }
 .rebutton {
-  margin-top: 15%;
+  margin-top: 10%;
+  margin-bottom: 10%;
   width: 125px;
 }
 
@@ -90,13 +91,13 @@
 
   .fx {
     text-align: center;
-    width: 80%;
-    margin-left: 5%;
-    margin-right: 10%;
+    /* width: 75%; */
+    /* margin-left: 5%;
+    margin-right: 15%; */
   }
   .rebutton {
-    width: 90%;
-    margin-right: 10%;
+    width: 65%;
+    /* margin-right: 10%; */
   }
 
   .sb {
@@ -106,9 +107,9 @@
   }
   .flexing p {
     font-size: 0.8rem;
-    width: 80%;
+    /* width: 80%;
     margin-left: 6%;
-    margin-right: 6%;
+    margin-right: 6%; */
   }
   .flexing2 {
     flex-direction: column;
