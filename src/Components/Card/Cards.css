@@ -80,7 +80,7 @@
 .loading {
   text-align: center;
   margin-top: 2%;
-  margin-bottom: 4%;
+  margin-bottom: 3%;
 }
 
 @media screen and (max-width: 55rem) {
@@ -128,7 +128,7 @@
   .loading {
     text-align: center;
     margin-top: 2%;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
   }
 
   .news {
