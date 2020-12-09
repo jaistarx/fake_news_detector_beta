@@ -29,9 +29,7 @@
 }
 .icons {
   text-align: center;
-  /* padding-top: 10%;
-    padding-bottom:10%;
-    padding-left: 10%; */
+  
 }
 .subnews {
   width: 45%;
@@ -44,9 +42,7 @@
   margin-left: 2%;
   width: 20%;
 }
-/* .thumb{
-      width:80%;
-  } */
+
 .mainicons {
   width: 7%;
   margin-left: 1%;
@@ -91,13 +87,11 @@
 
   .fx {
     text-align: center;
-    /* width: 75%; */
-    /* margin-left: 5%;
-    margin-right: 15%; */
+   
   }
   .rebutton {
     width: 65%;
-    /* margin-right: 10%; */
+    
   }
 
   .sb {
@@ -107,9 +101,7 @@
   }
   .flexing p {
     font-size: 0.8rem;
-    /* width: 80%;
-    margin-left: 6%;
-    margin-right: 6%; */
+   
   }
   .flexing2 {
     flex-direction: column;
