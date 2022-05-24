@@ -15,10 +15,6 @@ export default function Headings() {
         </div>
         <div className="heading">
           <h1>Fake News Prediction Using Stance Detection</h1>
-//           <p>
-//             Tagline here as a short description for the user to easily under
-//             stand abt the company
-//           </p>
         </div>
       </div>
       <div className="quote">
