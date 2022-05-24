@@ -14,11 +14,11 @@ export default function Headings() {
           <img src="images/online_articles.svg" className="image1" alt="i"></img>
         </div>
         <div className="heading">
-          <h1>We bring to you what is right and wrong</h1>
-          <p>
-            Tagline here as a short description for the user to easily under
-            stand abt the company
-          </p>
+          <h1>Fake News Prediction Using Stance Detection</h1>
+//           <p>
+//             Tagline here as a short description for the user to easily under
+//             stand abt the company
+//           </p>
         </div>
       </div>
       <div className="quote">
