@@ -106,8 +106,9 @@ export default function News(props) {
                 <Dropdown.Item href="#/action-1">Unrelated</Dropdown.Item>
                 <Dropdown.Item href="#/action-2">Agree</Dropdown.Item>
                 <Dropdown.Item href="#/action-3">Discuss</Dropdown.Item>
-                <Dropdown.Item href="#/action-4">Irrelavant</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Irrelavant</Dropdown.Item>
                 <Dropdown.Divider />
+                  <Dropdown.Item eventKey="4">None</Dropdown.Item>
               </Dropdown.Menu>
              
           </Dropdown>
