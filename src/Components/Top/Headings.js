@@ -14,14 +14,13 @@ export default function Headings() {
           <img src="images/online_articles.svg" className="image1" alt="i"></img>
         </div>
         <div className="heading">
-          <h1>Fake News Prediction Using Stance Detection</h1>
+          <h4> "A Platform for predicting stance of a news article using Machine Learning."  </h4>
+          <h5> We classify the news into 4 stances : agree, discuss, unrelated, irrelevant</h5>
+          <h6>This project is a humble solution to the official <a href="http://www.fakenewschallenge.org/"> fake news challenge  </a> </h6>
+            
+          
         </div>
-      </div>
-      <div className="quote">
-        <h1>
-          "Beware of false knowledge; it is more dangerous than ignorance"
-        </h1>
-      </div>
+      </div>  
     </div>
   );
 }

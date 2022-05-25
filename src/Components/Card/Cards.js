@@ -4,12 +4,14 @@ import { BsNewspaper } from "react-icons/bs";
 import { IconContext } from "react-icons/lib";
 import { FaQuestion, FaLinkedinIn } from "react-icons/fa";
 import Loading from "../Animation/Animation";
+import { Dropdown,  } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 export default function News(props) {
   const [check, setCheck] = useState(0);
   const [original, setOriginal] = useState(4);
 
-  const [checked1, setChecked1] = useState(true);
-  const [checked2, setChecked2] = useState(false);
+    const [checked1, setChecked1] = useState(true);
+    const [checked2, setChecked2] = useState(false);
 
   var c = props.fo.length;
   var b = [];
@@ -79,7 +81,7 @@ export default function News(props) {
       <div className="flexing fx">
         {/* <input placeholder="Search" className="sb"></input> */}
         <p>
-          Relevant By Date
+          Sort By Date
           <input
             type="checkbox"
             onClick={clicking}
@@ -88,15 +90,28 @@ export default function News(props) {
           ></input>
         </p>
         <p>
-          Relevant By Accuracy
-          <input
+          {/* <input
             type="checkbox"
             onClick={clicking}
             onChange={checking}
             checked={checked2}
-          ></input>
-        </p>
+          ></input> */}
+          <Dropdown>
+             
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Filter by Stance
+              </Dropdown.Toggle>
 
+              <Dropdown.Menu>
+                <Dropdown.Item href="#/action-1">Unrelated</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Agree</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Discuss</Dropdown.Item>
+                <Dropdown.Item href="#/action-4">Irrelavant</Dropdown.Item>
+                <Dropdown.Divider />
+              </Dropdown.Menu>
+             
+          </Dropdown>
+        </p>
         <a href="https://pgportal.gov.in/">
           <button className="rebutton">Report</button>
         </a>
